@@ -7,7 +7,7 @@ Belegarbeit für das Modul Hochverfügbare Systeme bei Herr Prof. Dr.-Ing. Steph
 ## Aufgabenstellung
 
 1. Deckblatt :white_check_mark:
-2. Verzeichnisse (Inhalt, Bilder, Tabellen)
+2. Verzeichnisse (Inhalt, Bilder, Tabellen) :white_check_mark:
 3. Einführung - Ziel des Laborversuchs :white_check_mark:
 4. Voraussetzungen :white_check_mark:
 5. Konfigurator-Bild :white_check_mark:
