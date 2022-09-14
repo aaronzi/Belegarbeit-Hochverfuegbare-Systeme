@@ -1,0 +1,82 @@
+\section{Datenmodell}
+
+Die nachfolgende Datenpunktliste gibt einen Überblick über die zu verwendenden Ein– und Ausgänge:
+
+\begin{table}[H]
+    \tiny
+    \begin{longtable}{|llllllll|}
+        \hline
+        \multicolumn{1}{|l|}{\multirow{2}{*}{\textbf{Nr.}}} &
+        \multicolumn{1}{l|}{\multirow{2}{*}{\textbf{BMK}}} &
+        \multicolumn{1}{l|}{\multirow{2}{*}{\textbf{Text}}} &
+        \multicolumn{1}{l|}{\multirow{2}{*}{\textbf{Ort}}} &
+        \multicolumn{1}{l|}{\multirow{2}{*}{\textbf{Datentyp}}} &
+        \multicolumn{3}{l|}{\textbf{SPS Adr.}} \\ \cline{6-8}
+        \multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} &\multicolumn{1}{l|}{} & \multicolumn{1}{l|}{Kanal} & \multicolumn{1}{l|}{Öffner} & Schließer \\ \hline
+        \endfirsthead
+        %
+        \endhead
+        %
+        \hline
+        \endfoot
+        %
+        \endlastfoot
+        %
+        % S7-1500
+        \rowcolor{grey}
+        \multicolumn{3}{|l}{} & \textbf{S7-1500} & \multicolumn{4}{l|}{} \\ \hline
+        % Eingänge
+        \rowcolor{lightGrey}
+        & \multicolumn{7}{l|}{\textbf{Eingänge}} \\ \hline
+        % S0
+        \multicolumn{1}{|l|}{1} & \multicolumn{1}{l|}{S0} & \multicolumn{1}{l|}{STOP-Leuchtdrucktaster} & \multicolumn{1}{l|}{DI 32x24VDC HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\%I 0.0} & \\
+        % S1
+        \multicolumn{1}{|l|}{2} & \multicolumn{1}{l|}{S1} & \multicolumn{1}{l|}{START-Leuchtdrucktaster} & \multicolumn{1}{l|}{DI 32x24VDC HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \%I 0.1 \\
+        % S2
+        \multicolumn{1}{|l|}{3} & \multicolumn{1}{l|}{S2} & \multicolumn{1}{l|}{QUITTIER-Leuchtdrucktaster} & \multicolumn{1}{l|}{DI 32x24VDC HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \%I 0.2 \\
+        % B3
+        \multicolumn{1}{|l|}{4} & \multicolumn{1}{l|}{B3} & \multicolumn{1}{l|}{Rückmeldung Motorschütz Förderschnecke} & \multicolumn{1}{l|}{DI 32x24VDC HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \%I 0.3 \\
+        % B4
+        \multicolumn{1}{|l|}{5} & \multicolumn{1}{l|}{B4} & \multicolumn{1}{l|}{Rückmeldung Motorschütz Förderband} & \multicolumn{1}{l|}{DI 32x24VDC HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \%I 0.4 \\ \hline
+        % Ausgänge
+        \rowcolor{lightGrey}
+        & \multicolumn{7}{l|}{\textbf{Ausgänge}} \\ \hline
+        % H0
+        \multicolumn{1}{|l|}{6} & \multicolumn{1}{l|}{H0} & \multicolumn{1}{l|}{STOP-Leuchtdrucktaster} & \multicolumn{1}{l|}{DQ 32x24VDC/0.5A HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{}      & \multicolumn{1}{l|}{} & \%Q 0.0 \\
+        % H1
+        \multicolumn{1}{|l|}{7} & \multicolumn{1}{l|}{H1} & \multicolumn{1}{l|}{START-Leuchtdrucktaster} & \multicolumn{1}{l|}{DQ 32x24VDC/0.5A HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{}      & \multicolumn{1}{l|}{} & \%Q 0.1 \\
+        % H2
+        \multicolumn{1}{|l|}{8} & \multicolumn{1}{l|}{H2} & \multicolumn{1}{l|}{QUITTIER-Leuchtdrucktaster} & \multicolumn{1}{l|}{DQ 32x24VDC/0.5A HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \%Q 0.2 \\
+        % H3
+        \multicolumn{1}{|l|}{9} & \multicolumn{1}{l|}{H3} & \multicolumn{1}{l|}{Leuchtmelder Förderschnecke} & \multicolumn{1}{l|}{DQ 32x24VDC/0.5A HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \%Q 0.3 \\
+        % H4
+        \multicolumn{1}{|l|}{10} & \multicolumn{1}{l|}{H4} & \multicolumn{1}{l|}{Leuchtmelder Förderband} & \multicolumn{1}{l|}{DQ 32x24VDC/0.5A HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{}      & \multicolumn{1}{l|}{} & \%Q 0.4 \\ \hline
+        % ET 200 SP
+        \rowcolor{grey}
+        \multicolumn{3}{|l}{} & \textbf{ET 200-SP} & \multicolumn{4}{l|}{} \\ \hline
+        % Eingänge
+        \rowcolor{lightGrey}
+        & \multicolumn{7}{l|}{\textbf{Eingänge}} \\ \hline
+        % S5
+        \multicolumn{1}{|l|}{11} & \multicolumn{1}{l|}{S5} & \multicolumn{1}{l|}{NOT-HALT-Taster} & \multicolumn{1}{l|}{F-DI 8x24VDC HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{1}     & \multicolumn{1}{l|}{\%I 22.0} & \%I 22.4 \\
+        % B1
+        \multicolumn{1}{|l|}{12} & \multicolumn{1}{l|}{B1} & \multicolumn{1}{l|}{Sensor Endlagenschalter Förderschnecke} & \multicolumn{1}{l|}{F-DI 8x24VDC HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{\%I 22.1} & \%I 22.5 \\
+        % B2
+        \multicolumn{1}{|l|}{13} & \multicolumn{1}{l|}{B2} & \multicolumn{1}{l|}{Sensor Endlagenschalter Förderband} & \multicolumn{1}{l|}{F-DI 8x24VDC HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{\%I 22.2} & \%I 22.6 \\ \hline
+        % Ausgänge
+        \rowcolor{lightGrey}
+        & \multicolumn{7}{l|}{\textbf{Ausgänge}} \\ \hline
+        % H5
+        \multicolumn{1}{|l|}{14} & \multicolumn{1}{l|}{H5} & \multicolumn{1}{l|}{Fehlerleuchtmelder} & \multicolumn{1}{l|}{F-DQ 4x24VDC/2A HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{}      & \multicolumn{1}{l|}{} & \%Q 28.0 \\
+        % K3
+        \multicolumn{1}{|l|}{15} & \multicolumn{1}{l|}{K3} & \multicolumn{1}{l|}{Motorschütz Förderschnecke} & \multicolumn{1}{l|}{F-DQ 4x24VDC/2A HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \%Q 28.1 \\
+        % K4
+        \multicolumn{1}{|l|}{16} & \multicolumn{1}{l|}{K4} & \multicolumn{1}{l|}{Motorschütz Förderband} & \multicolumn{1}{l|}{F-DQ 4x24VDC/2A HF} & \multicolumn{1}{l|}{BOOL} & \multicolumn{1}{l|}{}      & \multicolumn{1}{l|}{} & \%Q 28.2 \\ \hline
+        % Caption
+        \caption[Datenmodell des Systems]{Datenmodell des hochverfügbaren und sicheren Systems Silo mit Förderschnecke und Förderband}
+        \label{tab:my-table1}\\
+    \end{longtable}
+\end{table}
+
+Alle Leuchtdrucktaster (S0, S1 und S2) werden an der SPS (S7-1500) sowohl an dem digitalen Eingangsmodul \glqq DI 32x24VDC HF\grqq{} für Schaltbefehle, als auch am digitalen Ausgangsmodul \glqq DQ 32x24VDC/0,5A HF\grqq{} für Leuchtmeldungen (H0, H1, H2) einkanalig angeschlossen. Die Rückmeldungen der Hilfskontakte der Motorschütze (B3 und B4) erfolgen ebenfalls über das Modul \glqq DI 32x24VDC HF\grqq{}. Der Betrieb beider Motoren wird über zugehörige Leuchtmelder (H3 und H4) als Ausgänge des digitalen Ausgangsmodul \glqq DQ 32x24VDC/0,5A HF\grqq{} signalisiert. \\
+Die zweikanalig ausgeführten Eingänge (S5, B1, B2) werden an dem fehlersicheren Eingangsmodul \glqq F-DI 8x24VDC HF\grqq{} der dezentralen Peripherie (ET 200 SP) betrieben. Der Fehlerleuchtmelder (H5) sowie die Ansteuerung der Motorschütze der Förderschnecke (K3) und des Förderbandes (K4) werden an das fehlersichere Ausgangsmodul \glqq F-DQ 4x24VDC/2.0A HF\grqq{} angeschlossen.
