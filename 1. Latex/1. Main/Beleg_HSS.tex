@@ -81,6 +81,7 @@
 \usepackage{float}
 \usepackage{multirow}
 \usepackage{makecell}
+\numberwithin{table}{section}
 % \setlength{\tabcolsep}{0.5em}       % for the horizontal padding
 % {\renewcommand{\arraystretch}{1.8}  % for the vertical padding
 % \usepackage{ragged2e}
@@ -103,6 +104,7 @@
 \usepackage{subcaption}
 \usepackage{rotating}
 \usepackage{lscape}
+\numberwithin{figure}{section}
 % \captionsetup[subfigure]{list=true, font=normalsize, labelformat=brace, position=top} %setup für subfigure captions
 
 % Diagramm-/Grafikerstellung
@@ -286,13 +288,13 @@ VA2 Hochverfügbare und sichere Systeme}} \\
 %--------Inhaltsverzeichnis-----------------------
 \renewcommand{\contentsname}{Inhaltsverzeichnis}
 \tableofcontents
-% \clearpage
+\clearpage
 
 %--------Abbildungsverzeichnis--------------------
 \renewcommand{\listfigurename}{Abbildungsverzeichnis}
 \renewcommand*{\figurename}{Abb.}
 \listoffigures
-% \clearpage
+\clearpage
 
 %--------Tabellenverzeichnis----------------------
 \renewcommand*{\listtablename}{Tabellenverzeichnis}
@@ -314,7 +316,9 @@ VA2 Hochverfügbare und sichere Systeme}} \\
 
 \include{4_verhaltensspezifikation}
 
-\include{5_Stromlaufplan.tex}
+\include{5_stromlaufplan.tex}
+
+\include{6_inbetriebnahme.tex}
 
 %---------Quellen---------------------------------
 \newpage
