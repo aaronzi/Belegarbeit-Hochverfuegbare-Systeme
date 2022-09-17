@@ -124,23 +124,6 @@
 % \captionsetup[subfigure]{list=true, font=normalsize, labelformat=brace, position=top} %setup für subfigure captions
 
 %--------------------------------------------------------------------------
-% Pakete und Einstellungen für Bibliographien
-%--------------------------------------------------------------------------
-\usepackage[
-    style=alphabetic,
-    sorting=nty,
-    sortcites=true,
-    autopunct=true,
-    autolang=hyphen,
-    hyperref=true,
-    abbreviate=false,
-    backref=true,
-    backend=bibtex,
-    block=space
-]{biblatex}
-\bibliography{Bib/bib.bib}
-
-%--------------------------------------------------------------------------
 % Diagramm-/Grafikerstellung (TIKZ)
 %--------------------------------------------------------------------------
 \usepackage{pstricks}
@@ -314,7 +297,7 @@
 \ihead{\headmark}
 \automark{section}
 \chead{}
-\ohead{\includegraphics[scale=0.09]{Bilder/HTWLogoKopfzeile.png} \nocite{Regensburg2018}}
+\ohead{\includegraphics[scale=0.09]{Bilder/HTWLogoKopfzeile.png} \nocite{HTWklein}}
 \ifoot{Sebastian Richter\\ Aaron Zielstorff}
 \cfoot{\pagemark}
 \ofoot{VA2 Hochverfügbare\\und sichere Systeme}
@@ -330,7 +313,7 @@
 
    % HTW Logo
    \begin{flushright}
-   \includegraphics[scale=.07]{Bilder/LogoHTWBerlin.png}  \nocite{Wikimedia2014}
+   \includegraphics[scale=.07]{Bilder/LogoHTWBerlin.png}  \nocite{HTWgross}
    \end{flushright}
 
    \vspace{1cm}
@@ -401,5 +384,33 @@
 \include{6_hard-_und_software_uebersetzen_und_laden}
 
 \include{7_vergabe_profisafe_adressen}
+
+%---------Quellen---------------------------------
+\newpage
+\newcount\Quellennummer
+\Quellennummer=1
+
+\renewcommand\refname{Literaturverzeichnis}
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+
+\begin{thebibliography}{999}
+{\setlength{\emergencystretch}{3cm}%
+
+\bibitem[\the\Quellennummer]{HTWgross}
+HTW-Logo auf dem Deckblatt\par
+\url{https://de.wikipedia.org/wiki/Datei:Logo_HTW_Berlin.svg} \par
+ Stand: 17.08.2018 um 14:49 Uhr
+
+\advance\Quellennummer by 1
+ 
+\bibitem[\the\Quellennummer]{HTWklein}
+HTW-Logo in der Kopfzeile\par
+\url{http://tonkollektiv-htw.de/} \par
+ Stand: 17.08.2018 um 14:53 Uhr
+
+\advance\Quellennummer by 1
+
+}
+\end{thebibliography}
 
 \end{document}

@@ -6,21 +6,22 @@
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/1. Grundlagen/(1.1) Anlagenübersicht.png}}
+   \fbox{\includegraphics[width=0.75\textwidth]{Bilder/2. Inbetriebnahme/1. Grundlagen/(1.1) Anlagenübersicht.png}}
    \caption[Anlagenübersicht]{Anlagenübersicht}
-   \label{fig:Bild1.1}
+   \label{fig:Bild6.1}
 \end{figure}
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/1. Grundlagen/(1.2) Reale Anlage.jpg}}
+   \fbox{\includegraphics[width=0.75\textwidth]{Bilder/2. Inbetriebnahme/1. Grundlagen/(1.2) Reale Anlage.jpg}}
    \caption[Reale Anlage]{Reale Anlage (links: S7-1500; rechts: ET 200SP)}
-   \label{fig:Bild1.2}
+   \label{fig:Bild6.2}
 \end{figure}
 
 \subsubsection{PROFINET-Gerätenamen und IP-Adressen im Raum WH G-420}
 \begin{figure}[H]
     \centering
+    \scalebox{0.95}{%
     \begin{tikzpicture}[framed][domain=0:0]
         % Umrandung zeichnen
         \draw[black, very thick] (0,0) rectangle (15,17);
@@ -148,9 +149,10 @@
         \node[scale = 0.75] at (13, 4.1) {192.168.1.119};
         \node[font=\bfseries, scale = 0.8] at (13, 3.6) {et-200-wand-1};
         \node[scale = 0.75] at (13, 3.2) {192.168.1.139};
-    \end{tikzpicture}
+    \end{tikzpicture}%
+    }
     \caption[IP-Adressen und PROFINET-Gerätenamen im Raum WH G-420]{IP-Adressen und PROFINET-Gerätenamen im Raum WH G-420}
-    \label{fig:Bild1.3}
+    \label{fig:Bild6.3}
 \end{figure}
 
 \subsection{Neues Projekt anlegen} \label{sec: Neues_Projekt_anlegen}
@@ -160,9 +162,9 @@
 Im PC-Menü \glqq\textbf{Start}\grqq\:nach dem \textbf{TIA Portal} suchen (hier Version: V17) und Software starten.
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.4\textwidth]{Bilder/2. Neues Projekt anlegen/(2.1) TIA Portal V17 oeffnen.png}}
+   \fbox{\includegraphics[width=0.4\textwidth]{Bilder/2. Inbetriebnahme/2. Neues Projekt anlegen/(2.1) TIA Portal V17 oeffnen.png}}
    \caption[TIA Portal öffnen]{TIA Portal öffnen}
-   \label{fig:Bild2.1}
+   \label{fig:Bild6.4}
 \end{figure}
 
 \subsubsection{Projekt erstellen}
@@ -170,9 +172,9 @@ Im PC-Menü \glqq\textbf{Start}\grqq\:nach dem \textbf{TIA Portal} suchen (hier 
 \textbf{Projektname, Pfad} und \textbf{Autor} des neuen Projektes vergeben und mit \glqq\textbf{Erstellen}\grqq\:bestätigen.
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=1.0\textwidth]{Bilder/2. Neues Projekt anlegen/(2.2) Neues Projekt erstellen.png}}
+   \fbox{\includegraphics[width=0.95\textwidth]{Bilder/2. Inbetriebnahme/2. Neues Projekt anlegen/(2.2) Neues Projekt erstellen.png}}
    \caption[Neues Projekt erstellen]{Neues Projekt erstellen}
-   \label{fig:Bild2.2}
+   \label{fig:Bild6.5}
 \end{figure}
 
 \clearpage
@@ -182,10 +184,12 @@ Im PC-Menü \glqq\textbf{Start}\grqq\:nach dem \textbf{TIA Portal} suchen (hier 
 Die Projektansicht über \glqq\textbf{Projektansicht öffnen}\grqq\:aufrufen und weitere Einstellungen vornehmen.
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.6\textwidth]{Bilder/2. Neues Projekt anlegen/(2.3) Projektansicht oeffnen.png}}
+   \fbox{\includegraphics[width=0.6\textwidth]{Bilder/2. Inbetriebnahme/2. Neues Projekt anlegen/(2.3) Projektansicht oeffnen.png}}
    \caption[Projektansicht öffnen]{Projektansicht öffnen}
-   \label{fig:Bild2.3}
+   \label{fig:Bild6.6}
 \end{figure}
+
+\clearpage
 
 \subsection{Konfiguration der S7-1500} \label{sec: Konfiguration_der_S7_1500}
 
@@ -196,16 +200,16 @@ Pfad: Controller > SIMATIC S7-1500 > CPU > Nicht spezifizierte CPU 1500
     \centering
    \begin{minipage}[b]{.4\linewidth}
         \centering
-        \fbox{\includegraphics[width=1\linewidth]{Bilder/3. Konfiguration der S7-1500/3.1 S7-1500 hinzufügen/(3.1.1) Neues Geraet hinzufuegen.png}}
+        \fbox{\includegraphics[width=1\linewidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.1 S7-1500 hinzufügen/(3.1.1) Neues Geraet hinzufuegen.png}}
         \caption[Neues Gerät hinzufügen]{Neues Gerät hinzufügen}
-        \label{fig:Bild3.1}
+        \label{fig:Bild6.7}
    \end{minipage}
    \hspace{.1\linewidth}% Abstand zwischen Bilder
    \begin{minipage}[b]{.4\linewidth}
         \centering
-        \fbox{\includegraphics[width=1\linewidth]{Bilder/3. Konfiguration der S7-1500/3.1 S7-1500 hinzufügen/(3.1.2) SPS auswaehlen.png}}
+        \fbox{\includegraphics[width=1\linewidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.1 S7-1500 hinzufügen/(3.1.2) SPS auswaehlen.png}}
         \caption[S7-1500 auswählen]{S7-1500 auswählen}
-        \label{fig:Bild3.2}
+        \label{fig:Bild6.8}
    \end{minipage}
 \end{figure}
 
@@ -215,32 +219,32 @@ Pfad: Controller > SIMATIC S7-1500 > CPU > Nicht spezifizierte CPU 1500
 In der \textbf{Gerätesicht} der S7-1500 über \glqq\textbf{ermitteln}\grqq\:die entsprechende Hardware suchen.
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.7\textwidth]{Bilder/3. Konfiguration der S7-1500/3.2 Kommunikation herstellen/(3.2.1) Hardware ermitteln.png}}
+   \fbox{\includegraphics[width=0.7\textwidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.2 Kommunikation herstellen/(3.2.1) Hardware ermitteln.png}}
    \caption[Hardware ermitteln]{Hardware ermitteln}
-   \label{fig:Bild3.3}
+   \label{fig:Bild6.9}
 \end{figure}
 
 Einstellungen der Schnittstelle vornehmen und mit \glqq\textbf{Suche starten}\grqq\:nach Geräten suchen. Anschließend das richtige Gerät anhand der IP-Adresse (hier: 192.168.1.116) auswählen und mit \glqq\textbf{Erkennen}\grqq\:bestätigen.
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.6\textwidth]{Bilder/3. Konfiguration der S7-1500/3.2 Kommunikation herstellen/(3.2.2) Kommunikation aufnehmen.png}}
+   \fbox{\includegraphics[width=0.6\textwidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.2 Kommunikation herstellen/(3.2.2) Kommunikation aufnehmen.png}}
    \caption[Kommunikation herstellen]{Kommunikation herstellen}
-   \label{fig:Bild3.4}
+   \label{fig:Bild6.10}
 \end{figure}
 
-Da das Gerät erstmalig hinzugefügt wurde, ist es sinnvoll, dies als vertrauenswürdig einzustufen (\autoref{fig:Bild3.5}). Die gemachten Einstellungen sollen nicht als Voreinstellungen übernommen werden (\autoref{fig:Bild3.6}).  
+Da das Gerät erstmalig hinzugefügt wurde, ist es sinnvoll, dies als vertrauenswürdig einzustufen (\autoref{fig:Bild6.11}). Die gemachten Einstellungen sollen nicht als Voreinstellungen übernommen werden (\autoref{fig:Bild6.12}).  
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.75\textwidth]{Bilder/3. Konfiguration der S7-1500/3.2 Kommunikation herstellen/(3.2.3) Vertrauenswuerdigkeit zulassen.PNG}}
+   \fbox{\includegraphics[width=0.75\textwidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.2 Kommunikation herstellen/(3.2.3) Vertrauenswuerdigkeit zulassen.PNG}}
    \caption[Gerät als vertrauenswürdig einstufen]{Gerät als vertrauenswürdig einstufen}
-   \label{fig:Bild3.5}
+   \label{fig:Bild6.11}
 \end{figure}
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.75\textwidth]{Bilder/3. Konfiguration der S7-1500/3.2 Kommunikation herstellen/(3.2.4) Voreinstellungen nicht zulassen.PNG}}
-   \caption[Nicht als Vorteinstellung übernehmen]{Nicht als Voreinstellung übernehmen}
-   \label{fig:Bild3.6}
+   \fbox{\includegraphics[width=0.75\textwidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.2 Kommunikation herstellen/(3.2.4) Voreinstellungen nicht zulassen.PNG}}
+   \caption[Nicht als Voreinstellung übernehmen]{Nicht als Voreinstellung übernehmen}
+   \label{fig:Bild6.12}
 \end{figure}
 
 \clearpage
@@ -252,9 +256,9 @@ Nachdem das Gerät erkannt wurde, öffnet sich das Fenster \textbf{PLC Security-
 1. Schutz vertraulicher PLC-Konfigurationsdaten \textbf{deaktivieren}:
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/3. Konfiguration der S7-1500/3.3 Security-Einstellungen der S7-1500/(3.3.1) Security Einstellungen (1).png}}
+   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.3 Security-Einstellungen der S7-1500/(3.3.1) Security Einstellungen (1).png}}
    \caption[Security Einstellungen Teil 1]{Security Einstellungen Teil 1}
-   \label{fig:Bild3.7}
+   \label{fig:Bild6.13}
 \end{figure}
 
 \clearpage
@@ -262,9 +266,9 @@ Nachdem das Gerät erkannt wurde, öffnet sich das Fenster \textbf{PLC Security-
 2. Legacy- und Secure PG/PC-Kommunikation \textbf{nicht zulassen}:
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/3. Konfiguration der S7-1500/3.3 Security-Einstellungen der S7-1500/(3.3.2) Security Einstellungen (2).png}}
+   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.3 Security-Einstellungen der S7-1500/(3.3.2) Security Einstellungen (2).png}}
    \caption[Security Einstellungen Teil 2]{Security Einstellungen Teil 2}
-   \label{fig:Bild3.8}
+   \label{fig:Bild6.14}
 \end{figure}
 
 \clearpage
@@ -272,39 +276,39 @@ Nachdem das Gerät erkannt wurde, öffnet sich das Fenster \textbf{PLC Security-
 3. Zugriffstufe ohne Passwort auf \textbf{Vollzugriff inkl. fehlersicher (kein Schutz)} stellen:
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/3. Konfiguration der S7-1500/3.3 Security-Einstellungen der S7-1500/(3.3.3) Security Einstellungen (3).png}}
+   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.3 Security-Einstellungen der S7-1500/(3.3.3) Security Einstellungen (3).png}}
    \caption[Security Einstellungen Teil 3]{Security Einstellungen Teil 3}
-   \label{fig:Bild3.9}
+   \label{fig:Bild6.15}
 \end{figure}
 
 Die Einstellungen mit \glqq\textbf{Fertig stellen}\grqq\:übernehmen. Zuletzt über die \textbf{Gerätesicht} der S7-1500 den \textbf{Schreibzugriff deaktivieren}.\\
 Pfad: Allgemein > Display > Passwort 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/3. Konfiguration der S7-1500/3.3 Security-Einstellungen der S7-1500/(3.3.4) Passwortschutz entfernen.png}}
+   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.3 Security-Einstellungen der S7-1500/(3.3.4) Passwortschutz entfernen.png}}
    \caption[Passwortschutz entfernen]{Passwortschutz entfernen}
-   \label{fig:Bild3.10}
+   \label{fig:Bild6.16}
 \end{figure}
 
 \clearpage
 
 \subsubsection{IP-Adresse und Vergabe des PROFINET-Gerätenamen der S7-1500} \label{sec: IP-Adresse_PROFINET-Gerätename_S7-1500}
-Die jeweiligen IP-Adressen und PROFINET-Gerätenamen können der \autoref{fig:Bild1.3} entnommen werden. Die Bezeichnung des PROFINET-Anschlusses ist \textbf{X2}.
+Die jeweiligen IP-Adressen und PROFINET-Gerätenamen können der \autoref{fig:Bild6.3} entnommen werden. Die Bezeichnung des PROFINET-Anschlusses ist \textbf{X2}.
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.45\textwidth]{Bilder/3. Konfiguration der S7-1500/3.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der S7-1500/(3.4.1) PROFINET-Schnittstelle.jpg}}
+   \fbox{\includegraphics[width=0.45\textwidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der S7-1500/(3.4.1) PROFINET-Schnittstelle.jpg}}
    \caption[Anschluss an PROFINET-Schnittstelle]{Anschluss an PROFINET-Schnittstelle}
-   \label{fig:Bild3.11}
+   \label{fig:Bild6.17}
 \end{figure}
 
 1. IP-Adresse vergeben:\\
 Pfad über \textbf{Gerätesicht}: Allgemein > PROFINET-Schnittstelle [X2] > Ethernet-Adressen
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.9\textwidth]{Bilder/3. Konfiguration der S7-1500/3.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der S7-1500/(3.4.2) IP-Adresse der S7 einstellen.png}}
+   \fbox{\includegraphics[width=0.9\textwidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der S7-1500/(3.4.2) IP-Adresse der S7 einstellen.png}}
    \caption[IP-Adresse der S7-1500 eingeben]{IP-Adresse der S7-1500 eingeben}
-   \label{fig:Bild3.12}
+   \label{fig:Bild6.18}
 \end{figure}
 
 \clearpage
@@ -316,10 +320,12 @@ Zur Eingabe des PROFINET-Gerätenamen das Häkchen bei \glqq\textbf{PROFINET-Ger
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.9\textwidth]{Bilder/3. Konfiguration der S7-1500/3.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der S7-1500/(3.4.3) PROFINET-Geraetename S7 einstellen.png}}
+   \fbox{\includegraphics[width=0.9\textwidth]{Bilder/2. Inbetriebnahme/3. Konfiguration der S7-1500/3.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der S7-1500/(3.4.3) PROFINET-Geraetename S7 einstellen.png}}
    \caption[PROFINET-Gerätename der S7-1500 eingeben]{PROFINET-Gerätename der S7-1500 eingeben}
-   \label{fig:Bild3.13}
+   \label{fig:Bild6.19}
 \end{figure}
+
+\clearpage
 
 \subsection{Konfiguration der ET 200SP} \label{sec:Konfiguration_der_ET_200_SP}
 
@@ -331,16 +337,16 @@ Pfad: Katalog > Dezentrale Peripherie > ET 200SP > Interfacemodule > PROFINET > 
     \centering
    \begin{minipage}[b]{.4\linewidth}
         \centering
-        \fbox{\includegraphics[width=0.4\linewidth]{Bilder/4. Konfiguration der ET 200 SP/4.1 ET 200 SP hinzufügen/(4.1.1) Modulbezeichnung am Beispiel des IM 155-Moduls.jpg}}
+        \fbox{\includegraphics[width=0.4\linewidth]{Bilder/2. Inbetriebnahme/4. Konfiguration der ET 200 SP/4.1 ET 200 SP hinzufügen/(4.1.1) Modulbezeichnung am Beispiel des IM 155-Moduls.jpg}}
         \caption[Modulbezeichnung am Beispiel des IM 155-Interfacemoduls]{Modulbezeichnung am Beispiel des IM 155-Interfacemoduls}
-        \label{fig:Bild4.1}
+        \label{fig:Bild6.20}
    \end{minipage}
    \hspace{.1\linewidth}% Abstand zwischen Bilder
    \begin{minipage}[b]{.4\linewidth}
         \centering
-        \fbox{\includegraphics[width=1.1\linewidth]{Bilder/4. Konfiguration der ET 200 SP/4.1 ET 200 SP hinzufügen/(4.1.2) Dezentrale Peripherie hinzufuegen.png}}
+        \fbox{\includegraphics[width=1.0\linewidth]{Bilder/2. Inbetriebnahme/4. Konfiguration der ET 200 SP/4.1 ET 200 SP hinzufügen/(4.1.2) Dezentrale Peripherie hinzufuegen.png}}
         \caption[Dezentrale Peripherie hinzufügen]{Dezentrale Peripherie hinzufügen\\}
-        \label{fig:Bild4.2}
+        \label{fig:Bild6.21}
    \end{minipage}
 \end{figure}
 
@@ -352,9 +358,9 @@ In der \textbf{Gerätesicht} der ET 200SP über den Katalog die weiteren Module 
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.9\textwidth]{Bilder/4. Konfiguration der ET 200 SP/4.2 Module hinzufügen/(4.2.1) Übersicht aller Module der dezentralen Peripherie.jpg}}
+   \fbox{\includegraphics[width=0.9\textwidth]{Bilder/2. Inbetriebnahme/4. Konfiguration der ET 200 SP/4.2 Module hinzufügen/(4.2.1) Übersicht aller Module der dezentralen Peripherie.jpg}}
    \caption[Übersicht der Module der dezentralen Peripherie]{Übersicht der Module der dezentralen Peripherie}
-   \label{fig:Bild4.3}
+   \label{fig:Bild6.22}
 \end{figure}
 
 \begin{table}[H]
@@ -379,14 +385,14 @@ In der \textbf{Gerätesicht} der ET 200SP über den Katalog die weiteren Module 
          \hline
     \end{tabular}
     \caption{Modulbezeichnungen, -nummern und -versionen}
-    \label{tab:Tab4.1}
+    \label{tab:Tab6.1}
 \end{table}
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.9\textwidth]{Bilder/4. Konfiguration der ET 200 SP/4.2 Module hinzufügen/(4.2.2) Elemente der dezentralen Peripherie hinzufuegen.png}}
+   \fbox{\includegraphics[width=0.9\textwidth]{Bilder/2. Inbetriebnahme/4. Konfiguration der ET 200 SP/4.2 Module hinzufügen/(4.2.2) Elemente der dezentralen Peripherie hinzufuegen.png}}
    \caption[Module hinzufügen]{Module hinzufügen}
-   \label{fig:Bild4.4}
+   \label{fig:Bild6.23}
 \end{figure}
 
 Alle eingefügten Module (bis auf: F-RQ 24VDC/24…230VAC/5A ST) werden zu einer \textbf{Potentialgruppe} hinzugefügt. Dies kann durch das Anklicken der Module und dem anschließenden auswählen von \glqq\textbf{Neue Potentialgruppe ermöglichen (helle BaseUnit)}\grqq\:erfolgen.\\
@@ -394,27 +400,27 @@ Pfad: Allgemein > Potentialgruppe
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.75\textwidth]{Bilder/4. Konfiguration der ET 200 SP/4.2 Module hinzufügen/(4.2.3) Potenzialgruppe aendern.png}}
+   \fbox{\includegraphics[width=0.75\textwidth]{Bilder/2. Inbetriebnahme/4. Konfiguration der ET 200 SP/4.2 Module hinzufügen/(4.2.3) Potenzialgruppe aendern.png}}
    \caption[Potenzialgruppe anpassen]{Potenzialgruppe anpassen}
-   \label{fig:Bild4.5}
+   \label{fig:Bild6.24}
 \end{figure}
 
 \subsubsection{Geräteversionen tauschen}
-Sofern dies nicht bereits beim Einfügen der Module beachtet wurde, müssen die Versionen des Interfacemoduls IM 155-6PN HF und des Moduls F-DQ angepasst werden. Dies kann durch einen Rechtsklick in der \textbf{Gerätesicht} auf das \glqq\textbf{Modul > Geräte tauschen..}\grqq\:durchgeführt werden. Die Versionsnummern siehe \autoref{tab:Tab4.1}. \\
+Sofern dies nicht bereits beim Einfügen der Module beachtet wurde, müssen die Versionen des Interfacemoduls IM 155-6PN HF und des Moduls F-DQ angepasst werden. Dies kann durch einen Rechtsklick in der \textbf{Gerätesicht} auf das \glqq\textbf{Modul > Geräte tauschen..}\grqq\:durchgeführt werden. Die Versionsnummern siehe \autoref{tab:Tab6.1}. \\
 \textbf{ACHTUNG:} Die Artikel-Nummern müssen übereinstimmen.
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.65\textwidth]{Bilder/4. Konfiguration der ET 200 SP/4.3 Geräteversionen tauschen/(4.3.1) Geraeteversion tauschen.png}}
+   \fbox{\includegraphics[width=0.65\textwidth]{Bilder/2. Inbetriebnahme/4. Konfiguration der ET 200 SP/4.3 Geräteversionen tauschen/(4.3.1) Geraeteversion tauschen.png}}
    \caption[Geräteversion des IM 155-Interfacemoduls tauschen]{Geräteversion des IM 155-Interfacemoduls tauschen}
-   \label{fig:Bild4.6}
+   \label{fig:Bild6.25}
 \end{figure}
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.65\textwidth]{Bilder/4. Konfiguration der ET 200 SP/4.3 Geräteversionen tauschen/(4.3.2) Geraeteversion tauschen.png}}
+   \fbox{\includegraphics[width=0.65\textwidth]{Bilder/2. Inbetriebnahme/4. Konfiguration der ET 200 SP/4.3 Geräteversionen tauschen/(4.3.2) Geraeteversion tauschen.png}}
    \caption[Geräteversion des F-DQ-Moduls tauschen]{Geräteversion des F-DQ-Moduls tauschen}
-   \label{fig:Bild4.7}
+   \label{fig:Bild6.26}
 \end{figure}
 
 \subsubsection{IP-Adresse und Vergabe des PROFINET-Gerätenamen der ET 200SP} \label{sec: IP-Adresse_PROFINET-Gerätename_ET_200SP}
@@ -422,27 +428,29 @@ Die Bezeichnung der PROFINET-Schnittstelle der ET 200SP ist \textbf{X1}.
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.2\textwidth]{Bilder/4. Konfiguration der ET 200 SP/4.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der ET 200 SP/(4.4.1) Bezeichnung der PROFINET-Schnittstelle.jpg}}
+   \fbox{\includegraphics[width=0.2\textwidth]{Bilder/2. Inbetriebnahme/4. Konfiguration der ET 200 SP/4.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der ET 200 SP/(4.4.1) Bezeichnung der PROFINET-Schnittstelle.jpg}}
    \caption[Bezeichnung der PROFINET-Schnitstelle der ET 200SP]{Bezeichnung der PROFINET-Schnittstelle der ET 200SP}
-   \label{fig:Bild4.8}
+   \label{fig:Bild6.27}
 \end{figure}
 
-Die benötigte IP-Adresse und PROFINET-Gerätename können der \autoref{fig:Bild1.3} entnommen werden. Die Einstellungen sind über die \textbf{Gerätesicht} des Gerätes ET 200SP sichtbar. Bei der Vergabe des PROFINET-Gerätenamens das Häkchen bei \glqq\textbf{PROFINET-Gerätename automatisch generieren}\grqq\:entfernen.\\
+Die benötigte IP-Adresse und PROFINET-Gerätename können der \autoref{fig:Bild6.3} entnommen werden. Die Einstellungen sind über die \textbf{Gerätesicht} des Gerätes ET 200SP sichtbar. Bei der Vergabe des PROFINET-Gerätenamens das Häkchen bei \glqq\textbf{PROFINET-Gerätename automatisch generieren}\grqq\:entfernen.\\
 Pfad: Allgemein > PROFINET-Schnittstelle [X1]
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=1\textwidth]{Bilder/4. Konfiguration der ET 200 SP/4.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der ET 200 SP/(4.4.2) IP-Adresse der ET 200 SP.png}}
+   \fbox{\includegraphics[width=0.95\textwidth]{Bilder/2. Inbetriebnahme/4. Konfiguration der ET 200 SP/4.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der ET 200 SP/(4.4.2) IP-Adresse der ET 200 SP.png}}
    \caption[Vergabe der IP-Adresse der ET 200SP]{Vergabe der IP-Adresse der ET 200SP}
-   \label{fig:Bild4.9}
+   \label{fig:Bild6.28}
 \end{figure}
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=1\textwidth]{Bilder/4. Konfiguration der ET 200 SP/4.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der ET 200 SP/(4.4.3) PROFINET-Geraetename der ET 200 SP.png}}
+   \fbox{\includegraphics[width=0.95\textwidth]{Bilder/2. Inbetriebnahme/4. Konfiguration der ET 200 SP/4.4 IP-Adresse und Vergabe des PROFINET-Gerätenamen der ET 200 SP/(4.4.3) PROFINET-Geraetename der ET 200 SP.png}}
    \caption[Vergabe des PROFINET-Gerätenamen der ET 200SP]{Vergabe des PROFINET-Gerätenamen der ET 200SP}
-   \label{fig:Bild4.10}
+   \label{fig:Bild6.29}
 \end{figure}
+
+\clearpage
 
 \subsection{PROFINET-Verbindung} \label{sec:ergebnisse}
 
@@ -451,9 +459,9 @@ Die PROFINET-Verbindung beider Geräte und deren Module wird über die \textbf{N
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/5. PROFINET-Verbindung/5.1 Verbindung herstellen/(5.1.1) PROFINET-Verbindung ziehen.png}}
+   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/2. Inbetriebnahme/5. PROFINET-Verbindung/5.1 Verbindung herstellen/(5.1.1) PROFINET-Verbindung ziehen.png}}
    \caption[PROFINET-Verbindung herstellen]{PROFINET-Verbindung herstellen}
-   \label{fig:Bild5.1}
+   \label{fig:Bild6.30}
 \end{figure}
 
 \subsubsection{Fehlersicherheit aktivieren}
@@ -462,56 +470,60 @@ Pfad: Fehlersicherheit > F-Aktivierung
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/5. PROFINET-Verbindung/5.2 Fehlersicherheit aktivieren/(5.2.1) Fehlersicherheit aktivieren.png}}
+   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/2. Inbetriebnahme/5. PROFINET-Verbindung/5.2 Fehlersicherheit aktivieren/(5.2.1) Fehlersicherheit aktivieren.png}}
    \caption[Fehlersicherheit aktivieren]{Fehlersicherheit aktivieren}
-   \label{fig:Bild5.2}
+   \label{fig:Bild6.31}
 \end{figure}
 
 \subsubsection{Überprüfung des internen PROFINET-Gerätenamens der ET 200SP}
-Möglicherweise stimmt der intern festgelegte Gerätename nicht mit dem nach \autoref{sec: IP-Adresse_PROFINET-Gerätename_ET_200SP} vergebenen überein. Um dies zu kontrollieren, kann über einen Rechtsklick auf die gesetzte PROFINET-Verbindung in der Netzsicht (s. \autoref{sec: Verbindung herstellen}) der Gerätename der ET 200SP ausgelesen und abgeglichen werden (\textbf{Rechtsklick > Gerätename zuweisen}).(\autoref{fig:Bild3.5}).  Stimmen die Gerätenamen nicht überein, muss der Name entsprechend geändert werden (s. \autoref{sec: IP-Adresse_PROFINET-Gerätename_ET_200SP}).
+Möglicherweise stimmt der intern festgelegte Gerätename nicht mit dem nach \autoref{sec: IP-Adresse_PROFINET-Gerätename_ET_200SP} vergebenen überein. Um dies zu kontrollieren, kann über einen Rechtsklick auf die gesetzte PROFINET-Verbindung in der Netzsicht (s. \autoref{sec: Verbindung herstellen}) der Gerätename der ET 200SP ausgelesen und abgeglichen werden (\textbf{Rechtsklick > Gerätename zuweisen})(\autoref{fig:Bild6.32}).  Stimmen die Gerätenamen nicht überein, muss der Name entsprechend geändert werden (s. \autoref{sec: IP-Adresse_PROFINET-Gerätename_ET_200SP}).
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/5. PROFINET-Verbindung/5.3 Überprüfung des internen PROFINET-Gerätenamens der ET 200SP/(5.3.1) Ueberpruefung der richtigen Namen.png}}
+   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/2. Inbetriebnahme/5. PROFINET-Verbindung/5.3 Überprüfung des internen PROFINET-Gerätenamens der ET 200SP/(5.3.1) Ueberpruefung der richtigen Namen.png}}
    \caption[Überprüfung des internen Gerätenamens der ET 200SP]{Überprüfung des internen Gerätenamens der ET 200SP}
-   \label{fig:Bild5.3}
+   \label{fig:Bild6.32}
 \end{figure}
 
 \subsubsection{Überprüfung der IP-Adressen der Geräte}
-Eine weitere Überprüfung für die korrekte Verbindung ist in der Netzsicht über den Button \glqq\textbf{Adressen anzeigen}\grqq\:möglich. Hierbei werden die IP-Adressen der Geräte angezeigt. Diese können mit der \autoref{fig:Bild1.3} abgeglichen werden. Sofern keine Verbindung hergestellt wurde, wird eine Fehlermeldung ausgegeben.
+Eine weitere Überprüfung für die korrekte Verbindung ist in der Netzsicht über den Button \glqq\textbf{Adressen anzeigen}\grqq\:möglich. Hierbei werden die IP-Adressen der Geräte angezeigt. Diese können mit der \autoref{fig:Bild6.3} abgeglichen werden. Sofern keine Verbindung hergestellt wurde, wird eine Fehlermeldung ausgegeben.
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/5. PROFINET-Verbindung/5.4 Überprüfung der IP-Adressen der Geräte/(5.4.1) Ueberpruefung der richtigen Adressen.png}}
+   \fbox{\includegraphics[width=0.8\textwidth]{Bilder/2. Inbetriebnahme/5. PROFINET-Verbindung/5.4 Überprüfung der IP-Adressen der Geräte/(5.4.1) Ueberpruefung der richtigen Adressen.png}}
    \caption[Überprüfung der IP-Adressen der Geräte]{Überprüfung der IP-Adressen der Geräte}
-   \label{fig:Bild5.4}
+   \label{fig:Bild6.33}
 \end{figure}
+
+\clearpage
 
 \subsection{Laden und Übersetzen der Hard- und Software} \label{sec: laden_und_uebersetzen}
 
-Bevor eine Online-Verbindung mit der SPS aufgebaut werden kann, wird die Hard- und Software übersetzt (\autoref{fig:Bild6.1}) und anschließend in das Gerät geladen (\autoref{fig:Bild6.2}).
+Bevor eine Online-Verbindung mit der SPS aufgebaut werden kann, wird die Hard- und Software übersetzt (\autoref{fig:Bild6.34}) und anschließend in das Gerät geladen (\autoref{fig:Bild6.35}).
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.6\textwidth]{Bilder/6. Laden und Übersetzen der Hard- und Software/(6.1) Uebersetzen.PNG}}
+   \fbox{\includegraphics[width=0.6\textwidth]{Bilder/2. Inbetriebnahme/6. Laden und Übersetzen der Hard- und Software/(6.1) Uebersetzen.PNG}}
    \caption[Übersetzen der Hard- und Software]{Übersetzen der Hard- und Software}
-   \label{fig:Bild6.1}
+   \label{fig:Bild6.34}
 \end{figure}
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=0.6\textwidth]{Bilder/6. Laden und Übersetzen der Hard- und Software/(6.2) Laden.PNG}}
+   \fbox{\includegraphics[width=0.6\textwidth]{Bilder/2. Inbetriebnahme/6. Laden und Übersetzen der Hard- und Software/(6.2) Laden.PNG}}
    \caption[Laden der Hard- und Software]{Laden der Hard- und Software}
-   \label{fig:Bild6.2}
+   \label{fig:Bild6.35}
 \end{figure}
+
+\clearpage
 
 \subsection{Vergabe der PROFIsafe-Adressen} \label{sec: vergabe der profisafe-adressen}
 
-Nachdem die Online-Verbindung über \glqq\textbf{Online verbinden}\grqq\:hergestellt wurde, müssen die PROFIsafe-Adressen der F-DI und der F-DQ-Module vergeben werden. Dies kann durch einen \textbf{Rechtsklick auf Modul > PROFIsafe-Adresse zuweisen} durchgeführt werden. Anschließend wird das Menü aus \autoref{fig:Bild7.1} geöffnet. Nach Eingabe der Einstellungen des Online-Zugangs wird über \glqq\textbf{Identifikation}\grqq\:das entsprechende Modul ausgewählt. Durch das Setzen des Häkchen bei \glqq\textbf{Bestätigen}\grqq\:und dem Drücken von \glqq\textbf{PROFIsafe-Adresse zuweisen}\grqq\:wird die Einstellung übernommen.
+Nachdem die Online-Verbindung über \glqq\textbf{Online verbinden}\grqq\:hergestellt wurde, müssen die PROFIsafe-Adressen der F-DI und der F-DQ-Module vergeben werden. Dies kann durch einen \textbf{Rechtsklick auf Modul > PROFIsafe-Adresse zuweisen} durchgeführt werden. Anschließend wird das Menü aus \autoref{fig:Bild6.36} geöffnet. Nach Eingabe der Einstellungen des Online-Zugangs wird über \glqq\textbf{Identifikation}\grqq\:das entsprechende Modul ausgewählt. Durch das Setzen des Häkchen bei \glqq\textbf{Bestätigen}\grqq\:und dem Drücken von \glqq\textbf{PROFIsafe-Adresse zuweisen}\grqq\:wird die Einstellung übernommen.
 
 \begin{figure}[H]
    \centering
-   \fbox{\includegraphics[width=1\textwidth]{Bilder/7. Vergabe der PROFIsafe-Adressen/(7.1) Vergabe der PROFIsafe-Adressen.PNG}}
+   \fbox{\includegraphics[width=0.95\textwidth]{Bilder/2. Inbetriebnahme/7. Vergabe der PROFIsafe-Adressen/(7.1) Vergabe der PROFIsafe-Adressen.PNG}}
    \caption[Vergabe der PROFIsafe-Adressen]{Vergabe der PROFIsafe-Adressen}
-   \label{fig:Bild7.1}
+   \label{fig:Bild6.36}
 \end{figure}
