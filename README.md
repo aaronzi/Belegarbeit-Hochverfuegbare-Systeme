@@ -19,7 +19,7 @@ Belegarbeit für das Modul Hochverfügbare Systeme bei Herr Prof. Dr.-Ing. Steph
 11. Zustandsgraphen :white_check_mark:
 12. Schaltplan + Bauteilliste + Klemmenplan :white_check_mark:
 13. Aufbauplan (Vorder-/Rückseite) :white_check_mark:
-14. Simulation des Laborsversuchs (SPS-Programm)
+14. Simulation des Laborsversuchs (SPS-Programm) :white_check_mark:
 15. Bedienungsanleitung (für Inbetriebnahme) :white_check_mark:
-16. Testspezifikation (Checkliste)
-17. Inbetriebnahme (+ Bau)
+16. <s>Testspezifikation (Checkliste)</s>
+17. <s>Inbetriebnahme (+ Bau)</s>
